@@ -20,6 +20,24 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  /* Changes under */
+  display: flex;
+}
+
+.right-side {
+  padding: 10px;
+}
+
+.right-side-upper {
+  /* Changes under */
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.text {
+  padding-bottom: 10px;
 }
 
 .icon {
@@ -33,6 +51,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* Changes under here */
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+.header {
+  /* Changes under here */
+  font-weight: bold;
+  font-size: large;
 }
 
 .close-button {
