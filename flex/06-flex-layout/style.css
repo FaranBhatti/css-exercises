@@ -2,9 +2,11 @@
 
 body {
   height: 100vh;
-  margin: 0;
+  margin: 0px;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -24,4 +26,78 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* Changes below this line */
+
+ul {
+  /* getting rid of the underline */
+  list-style-type: none;
+}
+
+a:link {
+  /* getting rid of the dumb blue and underline link default decoration  */
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: auto;
+  padding: 25px;
+}
+
+.header .left-links {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  gap: 50px;
+}
+
+.header .right-links {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  gap: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  background-color: #eeeeee;
+  justify-content: space-between;
+  margin-top: auto;
+  padding: 25px;
+}
+
+.footer .left-links {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  gap: 50px;
+}
+
+.footer .right-links {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  gap: 50px;
 }
